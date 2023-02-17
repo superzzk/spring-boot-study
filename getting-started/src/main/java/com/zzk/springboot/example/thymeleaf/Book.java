@@ -1,4 +1,4 @@
-package com.zzk.springboot.example.readinglist;
+package com.zzk.springboot.example.thymeleaf;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

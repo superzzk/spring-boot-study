@@ -1,4 +1,4 @@
-package com.zzk.springboot.example.readinglist;
+package com.zzk.springboot.example.thymeleaf;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

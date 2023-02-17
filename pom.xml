@@ -12,6 +12,7 @@
     <modules>
         <module>getting-started</module>
         <module>jpa-h2</module>
+        <module>sec-kill</module>
     </modules>
 
     <properties>

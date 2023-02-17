@@ -1,4 +1,4 @@
-package com.zzk.springboot.example.readinglist;
+package com.zzk.springboot.example.thymeleaf;
 
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;

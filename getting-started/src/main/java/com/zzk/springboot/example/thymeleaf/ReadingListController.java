@@ -1,4 +1,4 @@
-package com.zzk.springboot.example.readinglist;
+package com.zzk.springboot.example.thymeleaf;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -25,7 +25,6 @@ public class ReadingListController {
 		this.amazonProperties = amazonProperties;
 	}
 	
-		
 	@RequestMapping(value="/{reader}", method=RequestMethod.GET)
 	public String readersBooks(
 			@PathVariable("reader") String reader,
@@ -44,6 +43,6 @@ public class ReadingListController {
 			@PathVariable("reader") String reader, Book book) {
 		book.setReader(reader);
 		readingListRepository.save(book);
-		return "redirect:/{reader}";
+		return "redirect:/readinglist/{reader}";
 	}
 }
