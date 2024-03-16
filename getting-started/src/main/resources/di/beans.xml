@@ -7,9 +7,9 @@
 
     <context:component-scan base-package="com.zzk.springboot.example.di.lookup" />
     
-    <bean id="schoolNotification" class="com.zzk.springboot.example.di.lookup.SchoolNotification" scope="prototype"/>
+    <bean id="schoolNotification" class="com.zzk.spring.core.di.lookup.SchoolNotification" scope="prototype"/>
     	        
-    <bean id="studentServices" class="com.zzk.springboot.example.di.lookup.StudentServices" scope="prototype" >
+    <bean id="studentServices" class="com.zzk.spring.core.di.lookup.StudentServices" scope="prototype" >
     	<lookup-method name="getNotification" bean="schoolNotification"/>
     </bean>     
 </beans>

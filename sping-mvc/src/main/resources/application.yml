@@ -1,0 +1,16 @@
+server.port: 8080
+spring:
+  freemarker:
+    template-loader-path: classpath:/templates/freemarker
+    suffix: .ftl
+    settings:
+      tag_syntax: auto_detect
+      number_format: '#'
+  resources:
+    static-locations: classpath:/static/
+    chain:
+      enabled: true
+      strategy:
+        content:
+          enabled: true
+          paths: /**

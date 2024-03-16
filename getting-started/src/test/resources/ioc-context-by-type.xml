@@ -6,7 +6,7 @@
     
 	<!-- Autowired injection -->
 
-    <bean id="item" class="com.zzk.springboot.example.di.store.ItemImpl1" />
-    <bean id="xml-store-by-autowire-type" class="com.zzk.springboot.example.di.store.Store" autowire="byType"/>
+    <bean id="item" class="com.zzk.spring.core.di.store.ItemImpl1" />
+    <bean id="xml-store-by-autowire-type" class="com.zzk.spring.core.di.store.Store" autowire="byType"/>
 
 </beans>

@@ -10,10 +10,11 @@ import javax.annotation.Resource;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsEqual.equalTo;
+import static org.junit.jupiter.api.Assertions.assertNotSame;
 
 @ExtendWith({SpringExtension.class})
 @ContextConfiguration(classes = FactoryBeanAppConfig.class)
-public class FactoryBeanJavaConfigIntegrationTest {
+class FactoryBeanJavaConfigIntegrationTest {
 
     @Autowired
     private Tool tool;
@@ -22,8 +23,12 @@ public class FactoryBeanJavaConfigIntegrationTest {
     private ToolFactory toolFactory;
 
     @Test
-    public void testConstructWorkerByJava() {
+    void testConstructWorkerByJava() throws Exception {
         assertThat(tool.getId(), equalTo(2));
         assertThat(toolFactory.getFactoryId(), equalTo(7070));
+
+        final Tool tool2 = toolFactory.getObject();
+        assertThat(tool2.getId(), equalTo(2));
+        assertNotSame(tool, tool2);
     }
 }

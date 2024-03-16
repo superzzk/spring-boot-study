@@ -7,16 +7,16 @@
    <context:annotation-config/>
 
 	<bean id="articleWithSetterInjectionBean"
-		class="com.zzk.springboot.example.di.xml.ArticleWithSetterInjection">
+		class="com.zzk.spring.core.di.xml.ArticleWithSetterInjection">
 		<constructor-arg ref="textFormatterBean" />
 	</bean>
 	
 	<bean id="articleWithConstructorInjectionBean"
-		class="com.zzk.springboot.example.di.xml.ArticleWithConstructorInjection">
+		class="com.zzk.spring.core.di.xml.ArticleWithConstructorInjection">
 		<constructor-arg ref="textFormatterBean" />
 	</bean>
 
-	<bean id="textFormatterBean" class="com.zzk.springboot.example.di.xml.TextFormatter">
+	<bean id="textFormatterBean" class="com.zzk.spring.core.di.xml.TextFormatter">
 	</bean>
 	
 </beans>

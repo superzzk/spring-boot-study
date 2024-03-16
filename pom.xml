@@ -14,11 +14,23 @@
         <module>jpa-h2</module>
         <module>sec-kill</module>
         <module>annotation</module>
+        <module>spring-core</module>
+        <module>sping-mvc</module>
+        <module>integration</module>
+        <module>camel</module>
     </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+        </dependency>
+    </dependencies>
 
 </project>
