@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080
+        instance:
+          service-base-url: http://127.0.0.1:8081
+          name: Spring-Admin-Client
+
+management:
+  endpoints:
+    health:
+      show-details: always
+    web:
+      exposure:
+        include: "*"
+
+logging:
+  level:
+    root: INFO
